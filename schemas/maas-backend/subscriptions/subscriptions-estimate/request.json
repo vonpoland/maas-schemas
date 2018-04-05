@@ -5,28 +5,26 @@
   "type": "object",
   "properties": {
     "customerId": {
-      "$ref": "../../../core/aws-units.json#/definitions/identityId"
+      "$ref": "../../../core/components/units.json#/definitions/identityId"
     },
     "userId": {
-      "$ref": "../../../core/aws-units.json#/definitions/identityId"
+      "$ref": "../../../core/components/units.json#/definitions/identityId"
     },
     "immediate": {
-      "type": "boolean",
-      "default": false
+      "type": "boolean"
     },
     "replace": {
-      "type": "boolean",
-      "default": true
+      "type": "boolean"
     },
     "payload": {
       "$ref": "../subscription.json#/definitions/subscriptionBase"
     },
     "headers": {
       "Accept": {
-        "$ref": "../../api-common.json#/definitions/acceptHeader"
+        "$ref": "../../../core/components/api-common.json#/definitions/acceptHeader"
       },
       "X-Whim-User-Agent": {
-        "$ref": "../../api-common.json#/definitions/userAgentHeader"
+        "$ref": "../../../core/components/api-common.json#/definitions/userAgentHeader"
       }
     }
   },

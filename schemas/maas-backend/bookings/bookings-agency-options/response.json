@@ -7,7 +7,19 @@
     "options": {
       "type": "array",
       "items": {
-        "$ref": "../../../core/booking-option.json"
+        "$ref": "../../../core/booking.json",
+        "required": ["leg", "terms", "product"]
+      }
+    },
+    "additional": {
+      "type": "object",
+      "properties": {
+        "bikeStations": {
+          "type": "array",
+          "items": {
+            "$ref": "../../../core/components/bike-station.json"
+          }
+        }
       }
     },
     "debug": {

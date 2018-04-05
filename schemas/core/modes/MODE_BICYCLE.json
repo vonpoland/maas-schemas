@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "pickupStation": {
+      "$ref": "../components/bike-station.json"
+    },
+    "returnStation": {
+      "$ref": "../components/bike-station.json"
+    },
+    "pickupStationId": {
+      "type": "string"
+    },
+    "returnStationId": {
+      "type": "string"
+    },
+    "bike": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string"
+        }
+      },
+      "required": ["id"]
+    }
+  }
+}
